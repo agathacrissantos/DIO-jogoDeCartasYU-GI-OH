@@ -11,11 +11,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&
+    display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
 
     <title>YU-GI-OH Jo-ken-po Edition</title>
 </head>
 <body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3"/>
+    </audio>
+
     <section class="bg-video">
       <video class="video" autoplay loop muted>
         <source src="./src/assets/videos/yugi.mp4" type="video/mp4">
@@ -25,7 +32,7 @@
     <section class="container">
         <div class="container__left framed-golden-2">
             <div class="score_box frame">
-                <span id="score_points">Win : 0 | Lose : 0</span>
+                <span id="score-points">Win : 0 | Lose : 0</span>
             </div>
             <div class="menu_avatar">
                 <img src="" alt="" id="card-image">
@@ -40,7 +47,7 @@
             <div class="card-box__container">
                 <div class="card-box framed" id="computer-cards"></div>
 
-                <div class="card-versus__container debug">
+                <div class="card-versus__container">
                     <div class="versus-top">
                         <div class="card-infield">
                             <img id="player-field-card" height="180px" width="125px">
@@ -61,6 +68,6 @@
     </section>
 
     <script src="./src/scripts/engine.js" defer></script>
-    
+
 </body>
 </html>
