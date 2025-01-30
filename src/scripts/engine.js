@@ -56,15 +56,15 @@ async function setCardsField(playerId) {
     drawButton(result);
 }
 
-<<<<<<< HEAD
+
 async function drawCardsInField(playerId, computerId) {
     state.cards.player.src = cardData[playerId].img;
     state.cards.computer.src = cardData[computerId].img;
-=======
+
 async function drawCardsInField(cardId, computerCardId) {
     state.fieldCards.player.src = cardData[playercardId].img;
     state.fieldCards.computer.src = cardData[computerCardId].img;
->>>>>>> e9aa8c8e698c19aaf6a6925d32efe4b0c8784b7f
+
 }
 
 async function toggleFieldCards(show) {
