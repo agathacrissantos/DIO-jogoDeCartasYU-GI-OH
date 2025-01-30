@@ -97,7 +97,7 @@ async function setCardsField(cardId) {
 }
 
 async function drawCardsInField(cardId, computerCardId) {
-    state.fieldCards.player.src = cardData[cardId].img;
+    state.fieldCards.player.src = cardData[playercardId].img;
     state.fieldCards.computer.src = cardData[computerCardId].img;
 }
 
